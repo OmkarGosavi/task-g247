@@ -1,0 +1,44 @@
+.card-body-container {
+  margin-top: 2rem;
+  @media screen and (min-width: 780px) {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .image-container {
+    position: relative;
+    width: 13.1875rem;
+    height: 8rem;
+    margin: auto;
+
+    @media screen and (min-width: 780px) {
+      width: unset;
+      margin: unset;
+    }
+
+    img {
+      border-radius: 0.41419rem;
+      border: 1.105px solid #595959;
+      display: block;
+      font-size: 0;
+      width: 100%;
+      height: auto;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 5.17356rem;
+      height: 0.7805rem;
+      border: 1.105px solid #e50000;
+      bottom: 19px;
+      left: 9px;
+    }
+  }
+  .form-conatiner {
+    @media screen and (min-width: 780px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

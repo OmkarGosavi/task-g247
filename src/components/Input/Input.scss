@@ -1,0 +1,50 @@
+@import "../../variable.scss";
+
+.input-container {
+  margin-top: 1.51rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  @media screen and (min-width: 780px) {
+    margin-top: 0;
+  }
+  .label {
+    color: $grey-light;
+    font-family: Roboto;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 0.75rem;
+    top: -0.3rem;
+    background: $card-bg-color;
+    padding: 0 4px;
+    &.focused {
+      color: $input-focus-color;
+    }
+  }
+  input {
+    width: 100%;
+    display: flex;
+    height: 2.75rem;
+    padding: 0.625rem 0.75rem 0.625rem 1rem;
+    align-items: center;
+    border-radius: 0.25rem;
+    border: 1px solid $grey-light;
+    outline: none;
+    &:focus,
+    &:focus-visible {
+      border: 1px solid $input-focus-color; /* Border color when focused */
+    }
+  }
+}
+.input-tag {
+  text-align: right;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  color: $font-secondary-color;
+  margin-top: 0.44rem;
+}

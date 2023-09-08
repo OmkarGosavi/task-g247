@@ -1,0 +1,26 @@
+@import "../../variable.scss";
+
+.heading-container {
+  display: flex;
+  gap: 0.54em;
+  align-items: center;
+  .icon-conatiner {
+    width: 1.41719rem;
+    height: 1.875rem;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  .title-conatiner {
+    .title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: $font-primary-color;
+    }
+    .sub-title {
+      font-size: 0.75rem;
+      color: $font-secondary-color;
+    }
+  }
+}
